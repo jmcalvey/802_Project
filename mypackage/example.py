@@ -52,7 +52,9 @@ def power_self(x: int) -> int:
     return int(x**x)
 
 
-def clip_and_scale(value: float, *, min_value: float = 0.0, max_value: float = 1.0) -> float:
+def clip_and_scale(
+    value: float, *, min_value: float = 0.0, max_value: float = 1.0
+) -> float:
     """Clip a number to a range, then scale to [0, 1].
 
     Args:
@@ -86,5 +88,3 @@ def clip_and_scale(value: float, *, min_value: float = 0.0, max_value: float = 1
 
     clipped = min(max(float(value), min_value), max_value)
     return (clipped - min_value) / (max_value - min_value)
-
-

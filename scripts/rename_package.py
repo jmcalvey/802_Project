@@ -13,7 +13,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OLD_NAME = "mypackage"
-EXCLUDE_DIRS = {".git", "envs", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
+EXCLUDE_DIRS = {
+    ".git",
+    "envs",
+    "__pycache__",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+}
 TEXT_EXTENSIONS = {".py", ".md", ".toml", ".yml", ".yaml", ".ipynb", ".txt", ".ini"}
 
 
@@ -59,7 +66,9 @@ def rename_package_dir(old_name: str, new_name: str) -> bool:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Rename starter package and update references")
+    parser = argparse.ArgumentParser(
+        description="Rename starter package and update references"
+    )
     parser.add_argument("new_name", help="New package name, e.g. soil_analysis")
     args = parser.parse_args()
 

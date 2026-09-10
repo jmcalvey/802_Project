@@ -1,0 +1,19 @@
+channels:
+  - defaults
+dependencies:
+  - pip
+  - autopep8
+  - jupyter
+  - pylint
+  - pytest
+  - pdoc3
+  - numpy
+  - matplotlib
+  - pandas
+  - scikit-image
+  - scikit-learn
+  - pip:
+    - argparse
+    - deap
+    - opencv-python
+    - scoop

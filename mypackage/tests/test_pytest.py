@@ -107,9 +107,13 @@ def test_regression_example_zero_is_one() -> None:
         (12.0, 10.0, 20.0, 0.2),
     ],
 )
-def test_clip_and_scale_values(value: float, minimum: float, maximum: float, expected: float) -> None:
+def test_clip_and_scale_values(
+    value: float, minimum: float, maximum: float, expected: float
+) -> None:
     """Clip-and-scale should produce expected normalized values."""
-    assert clip_and_scale(value, min_value=minimum, max_value=maximum) == pytest.approx(expected)
+    assert clip_and_scale(value, min_value=minimum, max_value=maximum) == pytest.approx(
+        expected
+    )
 
 
 def test_clip_and_scale_type_error() -> None:
@@ -138,4 +142,3 @@ def test_clip_and_scale_range_error() -> None:
 def test_template_replace_with_your_function(x: int, expected: int) -> None:
     """Template: replace this with tests for your own function."""
     assert power_self(x) == expected
-
