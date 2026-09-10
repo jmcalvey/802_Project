@@ -74,7 +74,7 @@ The repository follows the research software project template provided for the c
 ├── paper/
 │   └── proposal.md
 ├── mypackage/
-├── see-segment/
+├── see-segment-master/
 ├── tests/
 ├── docs/
 ├── scripts/
@@ -83,7 +83,7 @@ The repository follows the research software project template provided for the c
 └── README.md
 ```
 
-The repository structure will be updated as the project develops.
+The repository structure will be updated as the project develops. The see-segment-master folder was imported for easy exploration of the existing software
 
 ## Installation and Setup
 
